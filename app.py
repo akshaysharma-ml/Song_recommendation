@@ -177,6 +177,4 @@ elif df is not None:
                     </div>
                     """, unsafe_allow_html=True)
                     
-                    c1, c2 = st.columns([1, 4])
-                    with c1: st.link_button("📺 YouTube", yt_url)
-                    with c2: st.download_button("📥 Download", data="AudioData", file_name=f"{row['Song-Name']}.mp3", key=f"btn_{row_index}_{count}")
+                   st.link_button("📺 YouTube", yt_url)
