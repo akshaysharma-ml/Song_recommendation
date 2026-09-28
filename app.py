@@ -23,7 +23,7 @@ def check_hashes(password, hashed_text):
 # --- 2. AI ENGINE ---
 @st.cache_resource
 def get_engine():
-    file_path = r"C:\Users\hp\Desktop\ml_mini_project\SONG_REC\ex.csv"
+    file_path = r"ex.csv"
     if not os.path.exists(file_path):
         return None, None
 
